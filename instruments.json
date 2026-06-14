@@ -1,0 +1,232 @@
+{
+  "instruments": [
+    {
+      "symbol": "^N225",
+      "name": "日経平均株価",
+      "group": "jp",
+      "kind": "index"
+    },
+    {
+      "symbol": "1306.T",
+      "name": "TOPIX(連動ETF)",
+      "group": "jp",
+      "kind": "index"
+    },
+    {
+      "symbol": "1343.T",
+      "name": "東証REIT指数(ETF)",
+      "group": "jp",
+      "kind": "index"
+    },
+    {
+      "symbol": "^GSPC",
+      "name": "S&P 500",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^IXIC",
+      "name": "NASDAQ 総合",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^DJI",
+      "name": "NY ダウ",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^FTSE",
+      "name": "英 FTSE 100",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^GDAXI",
+      "name": "独 DAX",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^FCHI",
+      "name": "仏 CAC 40",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^STOXX50E",
+      "name": "ユーロ Stoxx 50",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^HSI",
+      "name": "香港 ハンセン",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "000001.SS",
+      "name": "上海総合",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^KS11",
+      "name": "韓国 KOSPI",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^TWII",
+      "name": "台湾 加権",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^BSESN",
+      "name": "印 SENSEX",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "^AXJO",
+      "name": "豪 ASX 200",
+      "group": "world",
+      "kind": "index"
+    },
+    {
+      "symbol": "USDJPY=X",
+      "name": "米ドル / 円",
+      "group": "fx",
+      "kind": "fx"
+    },
+    {
+      "symbol": "EURJPY=X",
+      "name": "ユーロ / 円",
+      "group": "fx",
+      "kind": "fx"
+    },
+    {
+      "symbol": "GBPJPY=X",
+      "name": "ポンド / 円",
+      "group": "fx",
+      "kind": "fx"
+    },
+    {
+      "symbol": "AUDJPY=X",
+      "name": "豪ドル / 円",
+      "group": "fx",
+      "kind": "fx"
+    },
+    {
+      "symbol": "CNYJPY=X",
+      "name": "人民元 / 円",
+      "group": "fx",
+      "kind": "fx"
+    },
+    {
+      "symbol": "EURUSD=X",
+      "name": "ユーロ / ドル",
+      "group": "fx",
+      "kind": "fx"
+    },
+    {
+      "symbol": "DX-Y.NYB",
+      "name": "ドル指数 (DXY)",
+      "group": "fx",
+      "kind": "index"
+    },
+    {
+      "symbol": "^TNX",
+      "name": "米 10年債利回り",
+      "group": "rates",
+      "kind": "yield"
+    },
+    {
+      "symbol": "^TYX",
+      "name": "米 30年債利回り",
+      "group": "rates",
+      "kind": "yield"
+    },
+    {
+      "symbol": "^FVX",
+      "name": "米 5年債利回り",
+      "group": "rates",
+      "kind": "yield"
+    },
+    {
+      "symbol": "^IRX",
+      "name": "米 13週TB利回り",
+      "group": "rates",
+      "kind": "yield"
+    },
+    {
+      "symbol": "GC=F",
+      "name": "金 (Gold)",
+      "group": "commodity",
+      "kind": "px"
+    },
+    {
+      "symbol": "SI=F",
+      "name": "銀 (Silver)",
+      "group": "commodity",
+      "kind": "px"
+    },
+    {
+      "symbol": "CL=F",
+      "name": "WTI 原油",
+      "group": "commodity",
+      "kind": "px"
+    },
+    {
+      "symbol": "BZ=F",
+      "name": "ブレント原油",
+      "group": "commodity",
+      "kind": "px"
+    },
+    {
+      "symbol": "NG=F",
+      "name": "天然ガス",
+      "group": "commodity",
+      "kind": "px"
+    },
+    {
+      "symbol": "HG=F",
+      "name": "銅 (Copper)",
+      "group": "commodity",
+      "kind": "px"
+    },
+    {
+      "symbol": "BTC-JPY",
+      "name": "ビットコイン / 円",
+      "group": "crypto",
+      "kind": "px"
+    },
+    {
+      "symbol": "ETH-JPY",
+      "name": "イーサリアム / 円",
+      "group": "crypto",
+      "kind": "px"
+    },
+    {
+      "symbol": "BTC-USD",
+      "name": "ビットコイン / ドル",
+      "group": "crypto",
+      "kind": "px"
+    },
+    {
+      "symbol": "ETH-USD",
+      "name": "イーサリアム / ドル",
+      "group": "crypto",
+      "kind": "px"
+    },
+    {
+      "symbol": "SPCX",
+      "name": "Space Exploration Technologies Corp.",
+      "group": "world",
+      "kind": "index"
+    }
+  ]
+}

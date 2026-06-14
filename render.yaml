@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: market-terminal
+    env: python
+    plan: free
+    buildCommand: "python --version"
+    startCommand: "python server.py"
+    envVars:
+      - key: MT_HOST
+        value: 0.0.0.0
+      - key: MT_READONLY
+        value: "1"
+      - key: MT_CORS_ORIGIN
+        value: "*"
