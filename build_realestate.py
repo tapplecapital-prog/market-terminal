@@ -94,10 +94,21 @@ TOOL_RESULT_DIRS = [
 ]
 
 # エリア定義: key, label, 都道府県コード(整数)
+# 表示順は「東京→主要都市→宮城→青森」の自然順。
+# 集計データの被覆度:
+#   東京(13)/宮城(4)/青森(2) … 県全体を市区町村単位でページング取得した(ほぼ)全件
+#   神奈川(14)/愛知(23)/大阪(27)/福岡(40)/北海道(1) … 県単位 get_all_data 1バッチ
+#       (=MCPラッパーの ~200件/レスポンス上限ぶんのサンプル。標準地を市区町村横断で
+#        広く拾うため代表性は十分。各県の標準地数(points)はこのサンプル件数)
 AREAS = [
-    ("tokyo",  "東京都",            13),
-    ("miyagi", "宮城県（仙台）",     4),
-    ("aomori", "青森県",             2),
+    ("tokyo",    "東京都",         13),
+    ("kanagawa", "神奈川県",       14),
+    ("aichi",    "愛知県",         23),
+    ("osaka",    "大阪府",         27),
+    ("fukuoka",  "福岡県",         40),
+    ("hokkaido", "北海道",          1),
+    ("miyagi",   "宮城県（仙台）",  4),
+    ("aomori",   "青森県",          2),
 ]
 
 # 和暦reiwa -> 西暦  (series 用)
@@ -236,9 +247,9 @@ def build():
     }
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
-    print("collected unique L01 points (3 prefectures):", total)
+    print(f"collected unique L01 points ({len(AREAS)} prefectures):", total)
     for a in areas_out:
-        print(f"  {a['key']:7s} points={a['points']:5d} avg={a['avg']} median={a['median']} "
+        print(f"  {a['key']:9s} points={a['points']:5d} avg={a['avg']} median={a['median']} "
               f"max={a['max']} yoy={a['yoyPct']}")
     print("wrote:", OUT_PATH)
     return out
