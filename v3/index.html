@@ -5,26 +5,8 @@
     <link rel="icon" href="./logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>マーケットモニター | あっぷるキャピタルグループ</title>
-    <script src="./config.js"></script>
-    <script>
-      (function () {
-        var base = (window.MARKET_API_BASE || "").replace(/\/$/, "");
-        if (!base) return;
-        var nativeFetch = window.fetch.bind(window);
-        window.fetch = function (input, init) {
-          if (typeof input === "string" && input.indexOf("/api/") === 0) {
-            return nativeFetch(base + input, init);
-          }
-          if (input && input.url && input.url.indexOf(location.origin + "/api/") === 0) {
-            var url = new URL(input.url);
-            return nativeFetch(new Request(base + url.pathname + url.search, input), init);
-          }
-          return nativeFetch(input, init);
-        };
-      })();
-    </script>
-    <script type="module" crossorigin src="./assets/index-ofLyMVH7.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DVcCnBMX.css">
+    <script type="module" crossorigin src="./assets/index-BtspeDx0.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C4qrFUoD.css">
   </head>
   <body>
     <div id="root"></div>

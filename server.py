@@ -367,29 +367,44 @@ def fetch_quote(inst):
             "kind": inst["kind"], "ok": False, "error": last_err}
 
 
+# 無料枠安定化(1b): singleflight ロック＋直近成功値(stale-on-error)
+_markets_lock = threading.Lock()
+_last_markets = None
+
+
 def build_markets():
-    cached = cache_get("markets", ttl=30)
+    cached = cache_get("markets", ttl=60)   # TTL 30→60s: Yahoo取得頻度を半減
     if cached:
         return cached
-    instruments = get_instruments()
-    results = {}
-    with ThreadPoolExecutor(max_workers=12) as ex:
-        futs = {ex.submit(fetch_quote, ins): ins["symbol"] for ins in instruments}
-        for fut in futs:
-            try:
-                q = fut.result()
-            except Exception:
-                continue
-            results[q["symbol"]] = q
-    groups = []
-    for gid, glabel in GROUP_LABELS:
-        items = [results[ins["symbol"]] for ins in instruments
-                 if ins["group"] == gid and ins["symbol"] in results]
-        if items:
-            groups.append({"id": gid, "label": glabel, "items": items})
-    payload = {"updated": int(time.time()), "groups": groups}
-    cache_set("markets", payload)
-    return payload
+    global _last_markets
+    # singleflight: 同時アクセス時に37銘柄フェッチが多重発火するのを防ぐ
+    with _markets_lock:
+        cached = cache_get("markets", ttl=60)
+        if cached:
+            return cached
+        instruments = get_instruments()
+        results = {}
+        with ThreadPoolExecutor(max_workers=6) as ex:   # 12→6: 無料枠のCPU/メモリ負荷を抑制
+            futs = {ex.submit(fetch_quote, ins): ins["symbol"] for ins in instruments}
+            for fut in futs:
+                try:
+                    q = fut.result()
+                except Exception:
+                    continue
+                results[q["symbol"]] = q
+        # stale-on-error: 全銘柄取得失敗（Yahoo遮断/一時障害）時は前回成功値を返す
+        if not any(q.get("ok") for q in results.values()) and _last_markets:
+            return _last_markets
+        groups = []
+        for gid, glabel in GROUP_LABELS:
+            items = [results[ins["symbol"]] for ins in instruments
+                     if ins["group"] == gid and ins["symbol"] in results]
+            if items:
+                groups.append({"id": gid, "label": glabel, "items": items})
+        payload = {"updated": int(time.time()), "groups": groups}
+        cache_set("markets", payload)
+        _last_markets = payload
+        return payload
 
 
 # ---------------------------------------------------------------------------
@@ -516,7 +531,7 @@ def build_news(source_ids=None):
     if wanted:
         feeds = [s for s in feeds if s["id"] in wanted]
     ck = "news:" + ",".join(sorted(s["id"] for s in feeds))
-    cached = cache_get(ck, ttl=120)
+    cached = cache_get(ck, ttl=300)
     if cached:
         return cached
     all_items = []
@@ -560,7 +575,7 @@ def build_symbol_news(symbol, name=""):
     if symbol and not SYM_RE.match(symbol):
         return {"updated": int(time.time()), "symbol": symbol, "name": name, "items": []}
     ck = f"news-symbol:{symbol}:{name}"
-    cached = cache_get(ck, ttl=120)
+    cached = cache_get(ck, ttl=300)
     if cached:
         return cached
     query = _symbol_news_query(symbol, name)
