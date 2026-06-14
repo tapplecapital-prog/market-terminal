@@ -1,0 +1,349 @@
+{
+  "updated": "2026-06-14T11:03:51Z",
+  "source": "EDINET (金融庁)",
+  "anyData": false,
+  "items": {
+    "7203": {
+      "ticker": "7203",
+      "name": "トヨタ自動車",
+      "industry": "輸送用機器",
+      "edinet_code": "E02144",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6758": {
+      "ticker": "6758",
+      "name": "ソニーグループ",
+      "industry": "電気機器",
+      "edinet_code": "E01777",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6861": {
+      "ticker": "6861",
+      "name": "キーエンス",
+      "industry": "電気機器",
+      "edinet_code": "E01967",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "8035": {
+      "ticker": "8035",
+      "name": "東京エレクトロン",
+      "industry": "電気機器",
+      "edinet_code": "E02652",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "9984": {
+      "ticker": "9984",
+      "name": "ソフトバンクグループ",
+      "industry": "情報・通信業",
+      "edinet_code": "E02778",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "9983": {
+      "ticker": "9983",
+      "name": "ファーストリテイリング",
+      "industry": "小売業",
+      "edinet_code": "E03217",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6098": {
+      "ticker": "6098",
+      "name": "リクルートホールディングス",
+      "industry": "サービス業",
+      "edinet_code": "E07801",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "8306": {
+      "ticker": "8306",
+      "name": "三菱UFJフィナンシャル・グループ",
+      "industry": "銀行業",
+      "edinet_code": "E03606",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "8316": {
+      "ticker": "8316",
+      "name": "三井住友フィナンシャルグループ",
+      "industry": "銀行業",
+      "edinet_code": "E03614",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "8411": {
+      "ticker": "8411",
+      "name": "みずほフィナンシャルグループ",
+      "industry": "銀行業",
+      "edinet_code": "E03615",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "8766": {
+      "ticker": "8766",
+      "name": "東京海上ホールディングス",
+      "industry": "保険業",
+      "edinet_code": "E03847",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "8058": {
+      "ticker": "8058",
+      "name": "三菱商事",
+      "industry": "卸売業",
+      "edinet_code": "E02529",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "8031": {
+      "ticker": "8031",
+      "name": "三井物産",
+      "industry": "卸売業",
+      "edinet_code": "E02513",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "4063": {
+      "ticker": "4063",
+      "name": "信越化学工業",
+      "industry": "化学",
+      "edinet_code": "E00776",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6501": {
+      "ticker": "6501",
+      "name": "日立製作所",
+      "industry": "電気機器",
+      "edinet_code": "E01737",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6503": {
+      "ticker": "6503",
+      "name": "三菱電機",
+      "industry": "電気機器",
+      "edinet_code": "E01739",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "7741": {
+      "ticker": "7741",
+      "name": "HOYA",
+      "industry": "精密機器",
+      "edinet_code": "E01124",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6954": {
+      "ticker": "6954",
+      "name": "ファナック",
+      "industry": "電気機器",
+      "edinet_code": "E01946",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6367": {
+      "ticker": "6367",
+      "name": "ダイキン工業",
+      "industry": "機械",
+      "edinet_code": "E01570",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6981": {
+      "ticker": "6981",
+      "name": "村田製作所",
+      "industry": "電気機器",
+      "edinet_code": "E01914",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "7267": {
+      "ticker": "7267",
+      "name": "本田技研工業",
+      "industry": "輸送用機器",
+      "edinet_code": "E02166",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "7269": {
+      "ticker": "7269",
+      "name": "スズキ",
+      "industry": "輸送用機器",
+      "edinet_code": "E02167",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "7011": {
+      "ticker": "7011",
+      "name": "三菱重工業",
+      "industry": "機械",
+      "edinet_code": "E02126",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "7974": {
+      "ticker": "7974",
+      "name": "任天堂",
+      "industry": "その他製品",
+      "edinet_code": "E02367",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "4502": {
+      "ticker": "4502",
+      "name": "武田薬品工業",
+      "industry": "医薬品",
+      "edinet_code": "E00919",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "4519": {
+      "ticker": "4519",
+      "name": "中外製薬",
+      "industry": "医薬品",
+      "edinet_code": "E00932",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "4568": {
+      "ticker": "4568",
+      "name": "第一三共",
+      "industry": "医薬品",
+      "edinet_code": "E00984",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "2914": {
+      "ticker": "2914",
+      "name": "日本たばこ産業",
+      "industry": "食料品",
+      "edinet_code": "E00492",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "4661": {
+      "ticker": "4661",
+      "name": "オリエンタルランド",
+      "industry": "サービス業",
+      "edinet_code": "E04707",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "9433": {
+      "ticker": "9433",
+      "name": "KDDI",
+      "industry": "情報・通信業",
+      "edinet_code": "E04425",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "9432": {
+      "ticker": "9432",
+      "name": "NTT",
+      "industry": "情報・通信業",
+      "edinet_code": "E04430",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "9434": {
+      "ticker": "9434",
+      "name": "ソフトバンク",
+      "industry": "情報・通信業",
+      "edinet_code": "E04426",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6902": {
+      "ticker": "6902",
+      "name": "デンソー",
+      "industry": "輸送用機器",
+      "edinet_code": "E01892",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "7751": {
+      "ticker": "7751",
+      "name": "キヤノン",
+      "industry": "電気機器",
+      "edinet_code": "E02274",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6273": {
+      "ticker": "6273",
+      "name": "SMC",
+      "industry": "機械",
+      "edinet_code": "E01673",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "6146": {
+      "ticker": "6146",
+      "name": "ディスコ",
+      "industry": "機械",
+      "edinet_code": "E01506",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "4543": {
+      "ticker": "4543",
+      "name": "テルモ",
+      "industry": "精密機器",
+      "edinet_code": "E01630",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    },
+    "8001": {
+      "ticker": "8001",
+      "name": "伊藤忠商事",
+      "industry": "卸売業",
+      "edinet_code": "E02497",
+      "fiscalYear": null,
+      "dataAvailable": false,
+      "metrics": null
+    }
+  }
+}

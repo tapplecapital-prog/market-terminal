@@ -873,6 +873,46 @@ def yahoo_history(symbol, rng, interval):
 
 
 # ---------------------------------------------------------------------------
+# 不動産市況(realestate.json) / 企業ファンダメンタルズ(fundamentals.json)
+#   いずれも build スクリプトが MCP から生成したスナップショットを静的配信。
+#   mtime 監視で再生成後の自動反映（サーバ再起動不要）。
+# ---------------------------------------------------------------------------
+_re_cache = {"mtime": 0, "data": {"areas": []}}
+_fund_cache = {"mtime": 0, "data": {"items": {}}}
+
+
+def _load_json_cached(path, cache, default):
+    try:
+        m = path.stat().st_mtime
+        if m != cache["mtime"]:
+            cache["data"] = json.loads(path.read_text(encoding="utf-8"))
+            cache["mtime"] = m
+    except Exception:
+        if not cache["data"]:
+            cache["data"] = default
+    return cache["data"]
+
+
+def get_realestate():
+    return _load_json_cached(ROOT / "realestate.json", _re_cache, {"areas": []})
+
+
+def get_fundamentals(symbol):
+    data = _load_json_cached(ROOT / "fundamentals.json", _fund_cache, {"items": {}})
+    items = data.get("items", {})
+    t = (symbol or "").strip().upper()
+    if t.endswith(".T"):
+        t = t[:-2]
+    if not t:
+        return {"ok": False, "error": "symbol required"}
+    item = items.get(t)
+    if not item:
+        return {"ok": False, "symbol": symbol, "error": "no data"}
+    return {"ok": True, "symbol": symbol, "item": item,
+            "source": data.get("source", "EDINET"), "updated": data.get("updated")}
+
+
+# ---------------------------------------------------------------------------
 # HTTP ハンドラ
 # ---------------------------------------------------------------------------
 STATIC_TYPES = {
@@ -953,6 +993,12 @@ class Handler(BaseHTTPRequestHandler):
                     (qs.get("symbol") or [""])[0],
                     (qs.get("range") or ["6mo"])[0],
                     (qs.get("interval") or ["1d"])[0]), ensure_ascii=False))
+            elif path == "/api/realestate":
+                self._send(200, json.dumps(get_realestate(), ensure_ascii=False))
+            elif path == "/api/fundamentals":
+                qs = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
+                self._send(200, json.dumps(
+                    get_fundamentals((qs.get("symbol") or [""])[0]), ensure_ascii=False))
             elif path == "/api/health":
                 self._send(200, json.dumps({"ok": True, "ts": int(time.time())}))
             else:

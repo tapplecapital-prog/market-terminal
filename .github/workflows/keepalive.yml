@@ -1,0 +1,50 @@
+name: keep-alive ping (market-terminal)
+
+# Render 無料枠は 15 分無アクセスで休眠し、復帰に約 50 秒かかる。
+# それを防ぐため公開URLの軽量エンドポイントを定期 ping する。
+#
+# 重要: GitHub Actions の cron は最短 5 分間隔だが、実際の起動は
+# 高負荷時に 5〜30 分（まれに 50〜60 分）遅延し、ドロップ（実行されない）こともある。
+# 単発 14 分 cron だけだと 15 分の休眠窓を割れない事故が起きるため、
+#   (1) cron 自体を */10（10分ごと）に詰めて遅延・ドロップに耐える
+#   (2) さらに 1 回の起動内で複数回 ping して間隔を埋める
+# の二段構えにしている。public repo の Actions 分は無料・無制限。
+
+on:
+  schedule:
+    # 10分ごと（UTC）。ただし Render 無料枠 750h/月（ワークスペース共有）を守るため
+    # 日本の深夜帯（JST 1:00-6:00 = UTC 16-21時）は ping せず休眠許容（月 ~600h に抑制）。
+    # 稼働は UTC 0-16,21-23 時 = JST 6:00〜翌 1:00（友人が見る時間帯のみ温める）。
+    - cron: "*/10 0-16,21-23 * * *"
+  workflow_dispatch: {}   # 手動実行も可能にしておく
+
+# 同時起動の重複を抑止（前の実行が残っていても新しい方を優先しない）
+concurrency:
+  group: keepalive
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Ping Render service (health endpoint, retry + spread)
+        run: |
+          URL="https://market-terminal-78i2.onrender.com/api/health"
+          # cron の遅延・ドロップ保険として、1 起動内で 4 分おきに 3 回叩く。
+          for i in 1 2 3; do
+            echo "=== ping #$i $(date -u +%FT%TZ) ==="
+            # 休眠からの復帰は最大 ~60 秒かかるので接続/全体タイムアウトを長めに。
+            # --retry で一時的な 5xx / 接続失敗も自前リトライ。
+            code=$(curl -sS -o /dev/null -w "%{http_code}" \
+                     --connect-timeout 30 --max-time 90 \
+                     --retry 3 --retry-delay 10 --retry-all-errors \
+                     "$URL" || echo "000")
+            echo "HTTP $code"
+            # 最終 ping 以外は 4 分待って次を打ち、10 分窓内で間隔を埋める
+            if [ "$i" -lt 3 ]; then sleep 240; fi
+          done
+          echo "keep-alive sequence finished"
