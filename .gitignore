@@ -3,3 +3,7 @@ __pycache__/
 *.tmp
 .DS_Store
 Thumbs.db
+# 内部引継ぎ資料は公開リポジトリに含めない
+HANDOFF_*.md
+_raw*/
+tool-results/
