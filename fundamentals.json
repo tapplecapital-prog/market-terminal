@@ -1,349 +1,767 @@
 {
-  "updated": "2026-06-14T11:03:51Z",
+  "updated": "2026-06-15T02:33:15Z",
   "source": "EDINET (金融庁)",
-  "anyData": false,
+  "anyData": true,
   "items": {
     "7203": {
       "ticker": "7203",
       "name": "トヨタ自動車",
       "industry": "輸送用機器",
       "edinet_code": "E02144",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 48036704000000.0,
+        "operating_income": 4795586000000.0,
+        "net_income": 4765086000000.0,
+        "total_assets": 93601350000000.0,
+        "net_assets": 36878913000000.0,
+        "operating_cf": 3696934000000.0,
+        "roe": 12.92,
+        "roa": 5.12,
+        "operating_margin": 9.98,
+        "equity_ratio": 39.4
+      }
     },
     "6758": {
       "ticker": "6758",
       "name": "ソニーグループ",
       "industry": "電気機器",
       "edinet_code": "E01777",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 12034917000000.0,
+        "operating_income": 1407163000000.0,
+        "net_income": 1141600000000.0,
+        "total_assets": 35293173000000.0,
+        "net_assets": 8510151000000.0,
+        "operating_cf": 2321675000000.0,
+        "roe": 13.41,
+        "roa": 3.99,
+        "operating_margin": 11.69,
+        "equity_ratio": 24.11
+      }
     },
     "6861": {
       "ticker": "6861",
       "name": "キーエンス",
       "industry": "電気機器",
       "edinet_code": "E01967",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 1059145000000.0,
+        "operating_income": 549775000000.0,
+        "net_income": 398656000000.0,
+        "total_assets": 3289224000000.0,
+        "net_assets": 3077874000000.0,
+        "operating_cf": 409522000000.0,
+        "roe": 12.95,
+        "roa": 17.06,
+        "operating_margin": 51.91,
+        "equity_ratio": 93.57
+      }
     },
     "8035": {
       "ticker": "8035",
       "name": "東京エレクトロン",
       "industry": "電気機器",
       "edinet_code": "E02652",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 2431568000000.0,
+        "operating_income": 697319000000.0,
+        "net_income": 544133000000.0,
+        "total_assets": 2625981000000.0,
+        "net_assets": 1639195000000.0,
+        "operating_cf": 582174000000.0,
+        "roe": 33.2,
+        "roa": 26.95,
+        "operating_margin": 28.68,
+        "equity_ratio": 62.42
+      }
     },
     "9984": {
       "ticker": "9984",
       "name": "ソフトバンクグループ",
       "industry": "情報・通信業",
       "edinet_code": "E02778",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 7243752000000.0,
+        "operating_income": null,
+        "net_income": 1153332000000.0,
+        "total_assets": 45013756000000.0,
+        "net_assets": 13953026000000.0,
+        "operating_cf": 203580000000.0,
+        "roe": 8.27,
+        "roa": null,
+        "operating_margin": null,
+        "equity_ratio": 31.0
+      }
     },
     "9983": {
       "ticker": "9983",
       "name": "ファーストリテイリング",
       "industry": "小売業",
       "edinet_code": "E03217",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年8月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 3400539000000.0,
+        "operating_income": 564265000000.0,
+        "net_income": 433009000000.0,
+        "total_assets": 3859353000000.0,
+        "net_assets": 2327501000000.0,
+        "operating_cf": 580618000000.0,
+        "roe": 18.6,
+        "roa": 14.62,
+        "operating_margin": 16.59,
+        "equity_ratio": 60.31
+      }
     },
     "6098": {
       "ticker": "6098",
       "name": "リクルートホールディングス",
       "industry": "サービス業",
       "edinet_code": "E07801",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 3557478000000.0,
+        "operating_income": 490542000000.0,
+        "net_income": 408504000000.0,
+        "total_assets": 2772252000000.0,
+        "net_assets": 1627360000000.0,
+        "operating_cf": 610363000000.0,
+        "roe": 25.1,
+        "roa": 17.69,
+        "operating_margin": 13.79,
+        "equity_ratio": 58.7
+      }
     },
     "8306": {
       "ticker": "8306",
       "name": "三菱UFJフィナンシャル・グループ",
       "industry": "銀行業",
       "edinet_code": "E03606",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": null,
+        "operating_income": 1565734000000.0,
+        "net_income": 1862946000000.0,
+        "total_assets": 413113501000000.0,
+        "net_assets": 16260498000000.0,
+        "operating_cf": 6415000000.0,
+        "roe": 11.46,
+        "roa": 0.65,
+        "operating_margin": null,
+        "equity_ratio": 3.94
+      }
     },
     "8316": {
       "ticker": "8316",
       "name": "三井住友フィナンシャルグループ",
       "industry": "銀行業",
       "edinet_code": "E03614",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": null,
+        "operating_income": null,
+        "net_income": 1177996000000.0,
+        "total_assets": 306282015000000.0,
+        "net_assets": 11209042000000.0,
+        "operating_cf": 4848464000000.0,
+        "roe": 10.51,
+        "roa": 0.56,
+        "operating_margin": null,
+        "equity_ratio": 3.66
+      }
     },
     "8411": {
       "ticker": "8411",
       "name": "みずほフィナンシャルグループ",
       "industry": "銀行業",
       "edinet_code": "E03615",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": null,
+        "operating_income": null,
+        "net_income": 885433000000.0,
+        "total_assets": 283320404000000.0,
+        "net_assets": 9423614000000.0,
+        "operating_cf": -3820800000000.0,
+        "roe": 9.4,
+        "roa": 0.41,
+        "operating_margin": null,
+        "equity_ratio": 3.33
+      }
     },
     "8766": {
       "ticker": "8766",
       "name": "東京海上ホールディングス",
       "industry": "保険業",
       "edinet_code": "E03847",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": null,
+        "operating_income": null,
+        "net_income": 1055276000000.0,
+        "total_assets": 31237340000000.0,
+        "net_assets": 3021956000000.0,
+        "operating_cf": 1345080000000.0,
+        "roe": 34.92,
+        "roa": 4.67,
+        "operating_margin": null,
+        "equity_ratio": 9.67
+      }
     },
     "8058": {
       "ticker": "8058",
       "name": "三菱商事",
       "industry": "卸売業",
       "edinet_code": "E02529",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 18617601000000.0,
+        "operating_income": null,
+        "net_income": 950709000000.0,
+        "total_assets": 21496104000000.0,
+        "net_assets": 10154322000000.0,
+        "operating_cf": 1658349000000.0,
+        "roe": 9.36,
+        "roa": null,
+        "operating_margin": null,
+        "equity_ratio": 47.24
+      }
     },
     "8031": {
       "ticker": "8031",
       "name": "三井物産",
       "industry": "卸売業",
       "edinet_code": "E02513",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 14662620000000.0,
+        "operating_income": null,
+        "net_income": 900342000000.0,
+        "total_assets": 16811509000000.0,
+        "net_assets": 7762632000000.0,
+        "operating_cf": 1017518000000.0,
+        "roe": 11.6,
+        "roa": null,
+        "operating_margin": null,
+        "equity_ratio": 46.17
+      }
     },
     "4063": {
       "ticker": "4063",
       "name": "信越化学工業",
       "industry": "化学",
       "edinet_code": "E00776",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 2561249000000.0,
+        "operating_income": 742105000000.0,
+        "net_income": 534021000000.0,
+        "total_assets": 5636601000000.0,
+        "net_assets": 3879362000000.0,
+        "operating_cf": 881934000000.0,
+        "roe": 13.77,
+        "roa": 14.56,
+        "operating_margin": 28.97,
+        "equity_ratio": 68.82
+      }
     },
     "6501": {
       "ticker": "6501",
       "name": "日立製作所",
       "industry": "電気機器",
       "edinet_code": "E01737",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 9783370000000.0,
+        "operating_income": null,
+        "net_income": 615724000000.0,
+        "total_assets": 13284813000000.0,
+        "net_assets": 6031417000000.0,
+        "operating_cf": 1172240000000.0,
+        "roe": 10.21,
+        "roa": null,
+        "operating_margin": null,
+        "equity_ratio": 45.4
+      }
     },
     "6503": {
       "ticker": "6503",
       "name": "三菱電機",
       "industry": "電気機器",
       "edinet_code": "E01739",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 5521711000000.0,
+        "operating_income": 391850000000.0,
+        "net_income": 324084000000.0,
+        "total_assets": 6375680000000.0,
+        "net_assets": 4076366000000.0,
+        "operating_cf": 455905000000.0,
+        "roe": 7.95,
+        "roa": 6.15,
+        "operating_margin": 7.1,
+        "equity_ratio": 63.94
+      }
     },
     "7741": {
       "ticker": "7741",
       "name": "HOYA",
       "industry": "精密機器",
       "edinet_code": "E01124",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 866032000000.0,
+        "operating_income": null,
+        "net_income": 202101000000.0,
+        "total_assets": 1234278000000.0,
+        "net_assets": 971629000000.0,
+        "operating_cf": 235113000000.0,
+        "roe": 20.8,
+        "roa": null,
+        "operating_margin": null,
+        "equity_ratio": 78.72
+      }
     },
     "6954": {
       "ticker": "6954",
       "name": "ファナック",
       "industry": "電気機器",
       "edinet_code": "E01946",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 797129000000.0,
+        "operating_income": 158846000000.0,
+        "net_income": 147557000000.0,
+        "total_assets": 1937031000000.0,
+        "net_assets": 1576929000000.0,
+        "operating_cf": 255273000000.0,
+        "roe": 9.36,
+        "roa": 10.16,
+        "operating_margin": 19.93,
+        "equity_ratio": 81.41
+      }
     },
     "6367": {
       "ticker": "6367",
       "name": "ダイキン工業",
       "industry": "機械",
       "edinet_code": "E01570",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 4752335000000.0,
+        "operating_income": 401669000000.0,
+        "net_income": 264757000000.0,
+        "total_assets": 5133416000000.0,
+        "net_assets": 2239296000000.0,
+        "operating_cf": 514450000000.0,
+        "roe": 11.82,
+        "roa": 7.14,
+        "operating_margin": 8.45,
+        "equity_ratio": 43.62
+      }
     },
     "6981": {
       "ticker": "6981",
       "name": "村田製作所",
       "industry": "電気機器",
       "edinet_code": "E01914",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 1743352000000.0,
+        "operating_income": 279702000000.0,
+        "net_income": 233818000000.0,
+        "total_assets": 3028194000000.0,
+        "net_assets": 2579975000000.0,
+        "operating_cf": 451905000000.0,
+        "roe": 9.06,
+        "roa": 9.24,
+        "operating_margin": 16.04,
+        "equity_ratio": 85.2
+      }
     },
     "7267": {
       "ticker": "7267",
       "name": "本田技研工業",
       "industry": "輸送用機器",
       "edinet_code": "E02166",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 21688767000000.0,
+        "operating_income": 1213486000000.0,
+        "net_income": 835837000000.0,
+        "total_assets": 30775867000000.0,
+        "net_assets": 12627822000000.0,
+        "operating_cf": 292152000000.0,
+        "roe": 6.62,
+        "roa": 3.94,
+        "operating_margin": 5.59,
+        "equity_ratio": 41.03
+      }
     },
     "7269": {
       "ticker": "7269",
       "name": "スズキ",
       "industry": "輸送用機器",
       "edinet_code": "E02167",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 5825161000000.0,
+        "operating_income": 642851000000.0,
+        "net_income": 416050000000.0,
+        "total_assets": 5993657000000.0,
+        "net_assets": 3688070000000.0,
+        "operating_cf": 669784000000.0,
+        "roe": 11.28,
+        "roa": 10.73,
+        "operating_margin": 11.04,
+        "equity_ratio": 61.53
+      }
     },
     "7011": {
       "ticker": "7011",
       "name": "三菱重工業",
       "industry": "機械",
       "edinet_code": "E02126",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 5027176000000.0,
+        "operating_income": null,
+        "net_income": 245447000000.0,
+        "total_assets": 6658924000000.0,
+        "net_assets": 2469823000000.0,
+        "operating_cf": 530459000000.0,
+        "roe": 9.94,
+        "roa": null,
+        "operating_margin": null,
+        "equity_ratio": 37.09
+      }
     },
     "7974": {
       "ticker": "7974",
       "name": "任天堂",
       "industry": "その他製品",
       "edinet_code": "E02367",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 1164922000000.0,
+        "operating_income": 282553000000.0,
+        "net_income": 278806000000.0,
+        "total_assets": 3398515000000.0,
+        "net_assets": 2486746000000.0,
+        "operating_cf": 12069000000.0,
+        "roe": 11.21,
+        "roa": 10.96,
+        "operating_margin": 24.26,
+        "equity_ratio": 73.17
+      }
     },
     "4502": {
       "ticker": "4502",
       "name": "武田薬品工業",
       "industry": "医薬品",
       "edinet_code": "E00919",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 4581551000000.0,
+        "operating_income": 342586000000.0,
+        "net_income": 107928000000.0,
+        "total_assets": 14248344000000.0,
+        "net_assets": 6935979000000.0,
+        "operating_cf": 1057182000000.0,
+        "roe": 1.56,
+        "roa": 2.4,
+        "operating_margin": 7.48,
+        "equity_ratio": 48.68
+      }
     },
     "4519": {
       "ticker": "4519",
       "name": "中外製薬",
       "industry": "医薬品",
       "edinet_code": "E00932",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2024年12月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 1170611000000.0,
+        "operating_income": 542002000000.0,
+        "net_income": 387317000000.0,
+        "total_assets": 2208373000000.0,
+        "net_assets": 1901499000000.0,
+        "operating_cf": 447600000000.0,
+        "roe": 20.37,
+        "roa": 24.54,
+        "operating_margin": 46.3,
+        "equity_ratio": 86.1
+      }
     },
     "4568": {
       "ticker": "4568",
       "name": "第一三共",
       "industry": "医薬品",
       "edinet_code": "E00984",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 1886256000000.0,
+        "operating_income": 331925000000.0,
+        "net_income": 295756000000.0,
+        "total_assets": 3456119000000.0,
+        "net_assets": 1623416000000.0,
+        "operating_cf": 53842000000.0,
+        "roe": 18.22,
+        "roa": 9.6,
+        "operating_margin": 17.6,
+        "equity_ratio": 46.97
+      }
     },
     "2914": {
       "ticker": "2914",
       "name": "日本たばこ産業",
       "industry": "食料品",
       "edinet_code": "E00492",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2024年12月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 3149759000000.0,
+        "operating_income": 323461000000.0,
+        "net_income": 179240000000.0,
+        "total_assets": 8370732000000.0,
+        "net_assets": 3848727000000.0,
+        "operating_cf": 630011000000.0,
+        "roe": 4.66,
+        "roa": 3.86,
+        "operating_margin": 10.27,
+        "equity_ratio": 45.98
+      }
     },
     "4661": {
       "ticker": "4661",
       "name": "オリエンタルランド",
       "industry": "サービス業",
       "edinet_code": "E04707",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 679374000000.0,
+        "operating_income": 172111000000.0,
+        "net_income": 124160000000.0,
+        "total_assets": 1438521000000.0,
+        "net_assets": 961027000000.0,
+        "operating_cf": 195388000000.0,
+        "roe": 12.92,
+        "roa": 12.05,
+        "operating_margin": 25.33,
+        "equity_ratio": 66.81
+      }
     },
     "9433": {
       "ticker": "9433",
       "name": "KDDI",
       "industry": "情報・通信業",
       "edinet_code": "E04425",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 5917953000000.0,
+        "operating_income": 1118674000000.0,
+        "net_income": 685677000000.0,
+        "total_assets": 16876219000000.0,
+        "net_assets": 5650572000000.0,
+        "operating_cf": 1249042000000.0,
+        "roe": 12.13,
+        "roa": 6.63,
+        "operating_margin": 18.9,
+        "equity_ratio": 33.48
+      }
     },
     "9432": {
       "ticker": "9432",
       "name": "NTT",
       "industry": "情報・通信業",
       "edinet_code": "E04430",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 13704727000000.0,
+        "operating_income": 1649571000000.0,
+        "net_income": 1000016000000.0,
+        "total_assets": 30062483000000.0,
+        "net_assets": 11344639000000.0,
+        "operating_cf": 2364031000000.0,
+        "roe": 8.81,
+        "roa": 5.49,
+        "operating_margin": 12.04,
+        "equity_ratio": 37.74
+      }
     },
     "9434": {
       "ticker": "9434",
       "name": "ソフトバンク",
       "industry": "情報・通信業",
       "edinet_code": "E04426",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 6544349000000.0,
+        "operating_income": 989016000000.0,
+        "net_income": 526133000000.0,
+        "total_assets": 16102195000000.0,
+        "net_assets": 4265371000000.0,
+        "operating_cf": 1367871000000.0,
+        "roe": 12.33,
+        "roa": 6.14,
+        "operating_margin": 15.11,
+        "equity_ratio": 26.49
+      }
     },
     "6902": {
       "ticker": "6902",
       "name": "デンソー",
       "industry": "輸送用機器",
       "edinet_code": "E01892",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 7161777000000.0,
+        "operating_income": 518953000000.0,
+        "net_income": 419081000000.0,
+        "total_assets": 8125000000000.0,
+        "net_assets": 5188918000000.0,
+        "operating_cf": 758743000000.0,
+        "roe": 8.08,
+        "roa": 6.39,
+        "operating_margin": 7.25,
+        "equity_ratio": 63.86
+      }
     },
     "7751": {
       "ticker": "7751",
       "name": "キヤノン",
       "industry": "電気機器",
       "edinet_code": "E02274",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2024年12月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 4509821000000.0,
+        "operating_income": null,
+        "net_income": null,
+        "total_assets": 5766246000000.0,
+        "net_assets": null,
+        "operating_cf": 606831000000.0,
+        "roe": null,
+        "roa": null,
+        "operating_margin": null,
+        "equity_ratio": null
+      }
     },
     "6273": {
       "ticker": "6273",
       "name": "SMC",
       "industry": "機械",
       "edinet_code": "E01673",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 792108000000.0,
+        "operating_income": 190244000000.0,
+        "net_income": 156344000000.0,
+        "total_assets": 2100767000000.0,
+        "net_assets": 1724298000000.0,
+        "operating_cf": 196656000000.0,
+        "roe": 9.07,
+        "roa": 9.99,
+        "operating_margin": 24.02,
+        "equity_ratio": 82.08
+      }
     },
     "6146": {
       "ticker": "6146",
       "name": "ディスコ",
       "industry": "機械",
       "edinet_code": "E01506",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 393313000000.0,
+        "operating_income": 166834000000.0,
+        "net_income": 123891000000.0,
+        "total_assets": 654087000000.0,
+        "net_assets": 477838000000.0,
+        "operating_cf": 120364000000.0,
+        "roe": 25.93,
+        "roa": 25.83,
+        "operating_margin": 42.42,
+        "equity_ratio": 73.05
+      }
     },
     "4543": {
       "ticker": "4543",
       "name": "テルモ",
       "industry": "精密機器",
       "edinet_code": "E01630",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 1036171000000.0,
+        "operating_income": 157668000000.0,
+        "net_income": 116978000000.0,
+        "total_assets": 1828393000000.0,
+        "net_assets": 1368535000000.0,
+        "operating_cf": 210802000000.0,
+        "roe": 8.55,
+        "roa": 8.62,
+        "operating_margin": 15.22,
+        "equity_ratio": 74.85
+      }
     },
     "8001": {
       "ticker": "8001",
       "name": "伊藤忠商事",
       "industry": "卸売業",
       "edinet_code": "E02497",
-      "fiscalYear": null,
-      "dataAvailable": false,
-      "metrics": null
+      "fiscalYear": "2025年3月期",
+      "dataAvailable": true,
+      "metrics": {
+        "revenue": 14724234000000.0,
+        "operating_income": null,
+        "net_income": 880251000000.0,
+        "total_assets": 15134264000000.0,
+        "net_assets": 6290712000000.0,
+        "operating_cf": 997278000000.0,
+        "roe": 13.99,
+        "roa": null,
+        "operating_margin": null,
+        "equity_ratio": 41.57
+      }
     }
   }
 }
